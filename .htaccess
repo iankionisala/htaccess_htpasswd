@@ -1,0 +1,10 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /home/<project_name>/public_html/backup/.htpasswd
+AuthBasicProvider file
+Require valid-user
+
+RewriteEngine on
+
+RewriteCond $1 !^(index\.php|rssfeed\.php|static|forums|img|attachments|advertisements|images|chat|css|js|captcha|fonts|uploads|holidays|ckeditor|ariescon_eng|ariescon_chi)
+RewriteRule ^(.*)$ index.php/$1 [L]
