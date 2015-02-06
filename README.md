@@ -1,9 +1,4 @@
 
-take note on the following:
-1. dapat absolute server path padung sa .htpasswd file
-  ** if unsure sa abs path, try <?php echo __FILE__; ?> sa directory kung asa ang .htpasswd (usually root)
-2. dapat ang password nka md5(APR) from this online generator http://www.htaccesstools.com/htpasswd-generator/
-
 Note :
 1. Make it sure that the .htpasswd file path is in absolute path.
   *** You can use the <?php echo __FILE__; ?> in PHP in displaying the path.
